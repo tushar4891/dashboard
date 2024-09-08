@@ -1,0 +1,72 @@
+.main-area {
+  height: 100vh;
+}
+
+.add-new-member-btn {
+  height: 35px;
+  width: 195px;
+  background-color: #2872fa;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  border-radius: 50% !important;
+  border: none !important;
+  object-fit: cover !important; /*Ensures the image scales to cover the circular area without distortion. */
+}
+
+.card-btn {
+  border: 1px solid #347afa;
+  color: #728bfa !important;
+  background-color: white;
+  font-weight: 300 !important;
+}
+.light-text {
+  color: #999;
+  font-size: 13px;
+}
+.result-label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #347afa;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background: white;
+  padding: 0 5px;
+}
+
+.save-btn {
+  background-color: #347afa;
+  color: white; /* Custom text color */
+  padding: 0.375rem 0.75rem; /* Same padding as Bootstrap buttons */
+  font-size: 1rem;
+  border-radius: 0.25rem; /* Same border radius as Bootstrap buttons */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 8px;
+  width: 80px;
+  border: none;
+}
+.cancel-btn {
+  border: 1px solid #fa3a7d; /* Custom border color */
+  color: #fa3a7d; /* Custom text color */
+  background-color: transparent;
+  padding: 0.375rem 0.75rem; /* Same padding as Bootstrap buttons */
+  font-size: 1rem !important;
+  border-radius: 0.25rem; /* Same border radius as Bootstrap buttons */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 8px;
+  width: 80px;
+}

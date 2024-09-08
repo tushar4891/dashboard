@@ -1,0 +1,41 @@
+.navbar {
+  border-bottom: 0.2px solid #c7c5c5; /* Adds a solid border to the right side */
+}
+
+.navbar img {
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /*Ensures the image scales to cover the circular area without distortion. */
+  border: 2px solid #347afa; /* Adds a 2px solid border with your desired color */
+}
+
+.custom-btn {
+  border: 1px solid #347afa; /* Custom border color */
+  color: #347afa; /* Custom text color */
+  background-color: transparent; /* Transparent background */
+  padding: 0.375rem 0.75rem; /* Same padding as Bootstrap buttons */
+  font-size: 0.75rem; /* Same font size as Bootstrap buttons */
+  border-radius: 0.25rem; /* Same border radius as Bootstrap buttons */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px; /* Add some space between text and icon */
+  font-size: 13px;
+  color: #484848;
+}
+
+.nav-link.dropdown-toggle .icon {
+  font-size: 10px; /* Adjust icon size if necessary */
+  color: #347afa;
+}
+/* Hide the default caret indicator */
+.navbar .dropdown-toggle::after {
+  content: none; /* Removes the default arrow */
+}

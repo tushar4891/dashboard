@@ -1,0 +1,257 @@
+.main-area {
+  height: 100vh;
+}
+.add-btn {
+  height: 35px;
+  width: 135px;
+  background-color: #2872fa;
+  color: white;
+  border: none;
+
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+.data-status-btn {
+  background-color: #fa2871;
+  height: 35px;
+  width: 235px;
+
+  color: white;
+  border: none;
+
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+.ground-btn {
+  height: 35px;
+  width: 200px;
+  color: #fa2871;
+  background-color: transparent;
+  border: 1px solid #fa2871;
+  border-radius: 0.25rem;
+}
+.custom-hr {
+  background-color: #000; /* Dark background color */
+  border-color: #000; /* Dark border color */
+  border-width: 2px; /* Thicker border */
+  height: 2px; /* Thicker line */
+  width: 80%; /* Width of the line */
+  margin-left: 90px; /* Positioning */
+  margin-top: 20px; /* Spacing */
+}
+.search-btn {
+  height: 40px;
+  width: 100px;
+  color: white;
+  background-color: #2872fa;
+  border: 1px solid #2872fa;
+  border-radius: 0.25rem;
+}
+
+/* Container styling for relative positioning */
+.search-container {
+  position: relative;
+}
+
+/* Search box styling */
+.search-input {
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+/* Highlight border on focus */
+.search-input:focus {
+  border-color: #347afa;
+  outline: none; /* Removes the default outline */
+}
+
+/* Label for "Search" placeholder text */
+.search-label {
+  position: absolute;
+  top: 5px; /* Initially inside the input */
+  left: 12px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px; /* Larger size for the placeholder inside */
+  color: #6c757d;
+  pointer-events: none;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+/* Move label to the top of the border when input is focused or has text */
+.search-input:focus + .search-label,
+.search-input:not(:placeholder-shown) + .search-label {
+  top: -12px; /* Moves label to the border */
+  left: 10px; /* Keeps it aligned with the input box */
+  font-size: 12px; /* Smaller size for the label */
+  color: #347afa;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.search-select {
+  padding-top: 18px; /* Space for the label */
+}
+
+.result-label {
+  position: absolute;
+  top: -12px; /* Position the label at the top left border initially */
+  left: 12px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 12px; /* Smaller font size initially */
+  color: #347afa;
+  pointer-events: none;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.search-select:focus + .search-label,
+.search-select:not(:placeholder-shown) + .search-label {
+  top: -12px; /* Keeps label at the top */
+  font-size: 12px; /* Maintains smaller font size */
+  color: #347afa; /* Highlights the label in blue when focused */
+}
+
+.modal-btn {
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 70px;
+  border-radius: 4px;
+  border-color: #347afa;
+}
+
+.secondary-description {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #aaa;
+}
+.cancel-btn {
+  border: 1px solid #fa3a7d; /* Custom border color */
+  color: #fa3a7d; /* Custom text color */
+  background-color: transparent;
+  padding: 0.375rem 0.75rem; /* Same padding as Bootstrap buttons */
+  font-size: 0.75rem; /* Same font size as Bootstrap buttons */
+  border-radius: 0.25rem; /* Same border radius as Bootstrap buttons */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 8px;
+}
+.save-btn {
+  background-color: #347afa;
+  color: white; /* Custom text color */
+  padding: 0.375rem 0.75rem; /* Same padding as Bootstrap buttons */
+  font-size: 0.75rem; /* Same font size as Bootstrap buttons */
+  border-radius: 0.25rem; /* Same border radius as Bootstrap buttons */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 8px;
+  width: 60px;
+  border: none;
+}
+.upload-btn {
+  border: 1px solid #347afa; /* Custom border color */
+  background-color: #347afa;
+  color: white; /* Custom text color */
+  padding: 0.375rem 0.75rem; /* Same padding as Bootstrap buttons */
+  font-size: 0.75rem; /* Same font size as Bootstrap buttons */
+  border-radius: 0.25rem; /* Same border radius as Bootstrap buttons */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  padding: 8px;
+  width: 140px;
+  height: 40px;
+}
+.container {
+  height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card-btn {
+  border: 1px solid #347afa;
+  color: #728bfa !important;
+  background-color: white;
+  font-weight: 300 !important;
+}
+
+.table td {
+  position: relative;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.table td {
+  position: relative;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.btn-link span {
+  margin-right: 5px; /* Space between the symbol and the text */
+}
+
+.btn-link:hover {
+  text-decoration: underline !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #e0f7fa; /* Light blue background */
+  border: 1px solid #b2ebf2; /* Light blue border */
+  border-radius: 4px; /* Rounded corners */
+  color: #007bff; /* Text color */
+  padding: 5px 10px; /* Padding */
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button.active {
+  background-color: #b2ebf2; /* Slightly darker blue */
+  border-color: #80deea; /* Slightly darker border */
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0; /* Grey background for disabled */
+  border-color: #ccc; /* Grey border */
+  cursor: not-allowed;
+}

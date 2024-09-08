@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+}
+main {
+  width: 100%;
+  padding: 20px;
+}
+.sidebar {
+  background: #ffffff;
+  /* color: #fff; */
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+  position: fixed;
+  left: 0;
+  border-right: 0.2px solid #c7c5c5; /* Adds a solid border to the right side */
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: center; /* Centers the FaBars icon initially */
+  transition: justify-content 0.5s; /* Smooth transition for justify-content */
+}
+.logo {
+  font-size: 30px;
+  margin-left: 10px; /* Adjust for visual alignment */
+}
+.bars {
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  width: 40px; /* Size of the circle */
+  height: 40px; /* Size of the circle */
+  border-radius: 50%; /* Makes the background circular */
+}
+.bars:hover {
+  background-color: #f0f0f0; /* Light circle background color */
+  color: #000; /* Icon color */
+}
+.link {
+  display: flex;
+  /* color: #fff; */
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  color: #a0a0a0;
+}
+.link:hover {
+  background: #e3f2ff;
+  color: #000;
+  transition: all 0.5s;
+}
+.active {
+  background: #e3f2ff;
+  color: #000;
+}
+
+.active .icon {
+  color: blue;
+}
+.active .link_text {
+  color: black;
+}
+
+.link_text {
+  font-size: 20px;
+  margin-left: 10px;
+  color: black;
+}
+.icon {
+  font-size: 20px;
+  margin-left: 10px;
+  color: rgb(116, 113, 113);
+}
